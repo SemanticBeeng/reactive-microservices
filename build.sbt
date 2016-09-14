@@ -5,6 +5,8 @@ name := "reactive-microservices"
 
 organization := "com.theiterators"
 
+scalaVersion := "2.11.8"
+
 version := "1.0"
 
 lazy val `reactive-microservices` = (project in file(".")).aggregate(metricsCommon, `metrics-collector`, `token-manager`,
@@ -149,9 +151,9 @@ lazy val commonSettings = Seq(
     "Typesafe Releases" at "http://repo.typesafe.com/typesafe/releases/")
 )
 
-val akkaV = "2.3.10"
-val playV = "2.3.8"
-val akkaStreamV = "1.0-RC2"
+val akkaV = "2.4.10"
+val playV = "2.5.7"
+val akkaStreamV = "2.4.10"
 val reactiveMongoV = "0.10.5.0.akka23"
 val slickV = "2.1.0"
 val postgresV = "9.3-1102-jdbc41"
@@ -160,8 +162,8 @@ val restFbV = "1.7.0"
 val jbcryptV = "0.3m"
 
 val `akka-actor` = "com.typesafe.akka" %% "akka-actor" % akkaV
-val `akka-stream` = "com.typesafe.akka" %% "akka-stream-experimental" % akkaStreamV
-val `akka-http-core` = "com.typesafe.akka" %% "akka-http-core-experimental" % akkaStreamV
+val `akka-stream` = "com.typesafe.akka" % "akka-stream" % % akkaStreamV
+val `akka-http-core` = "com.typesafe.akka" %% "akka-http-experimental" % akkaStreamV
 val `akka-http-scala` = "com.typesafe.akka" %% "akka-http-scala-experimental" % akkaStreamV
 val `akka-http-spray` = "com.typesafe.akka" %% "akka-http-spray-json-experimental" % akkaStreamV
 val `akka-remote` = "com.typesafe.akka" %% "akka-remote" % akkaV
