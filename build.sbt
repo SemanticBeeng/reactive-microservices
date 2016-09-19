@@ -162,7 +162,7 @@ val restFbV = "1.7.0"
 val jbcryptV = "0.3m"
 
 val `akka-actor` = "com.typesafe.akka" %% "akka-actor" % akkaV
-val `akka-stream` = "com.typesafe.akka" % "akka-stream" % % akkaStreamV
+val `akka-stream` = "com.typesafe.akka" % "akka-stream" % akkaStreamV
 val `akka-http-core` = "com.typesafe.akka" %% "akka-http-experimental" % akkaStreamV
 val `akka-http-scala` = "com.typesafe.akka" %% "akka-http-scala-experimental" % akkaStreamV
 val `akka-http-spray` = "com.typesafe.akka" %% "akka-http-spray-json-experimental" % akkaStreamV
